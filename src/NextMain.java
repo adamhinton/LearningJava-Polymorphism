@@ -7,6 +7,16 @@ public class NextMain {
 
         Adventure jaws = (Adventure) Movie.getMovie("A", "Jaws");
 
+        Object comedy = Movie.getMovie("C", "Airplane");
+        Comedy comedyMovie = (Comedy) comedy;
+        comedyMovie.watchComedy();
+
+        var airplane = Movie.getMovie("C", "Airplane");
+        airplane.watchMovie();
+
+        var plane = new Comedy("Airplane");
+        plane.watchComedy();
+
     }
 
 }
